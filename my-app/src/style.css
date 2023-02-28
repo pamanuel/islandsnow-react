@@ -1,3 +1,8 @@
 footer{
-  background-color: beige;
+  background-color: #292929;
+  color: white;
+}
+InputGroup.Text{
+  background-color: black;
+  color: white;
 }

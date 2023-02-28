@@ -9,6 +9,10 @@ import { NavDropdown } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
 import { Facebook, Twitter, Pinterest, Instagram, HouseFill, Search, PersonFill, Cart } from 'react-bootstrap-icons';
 
 
@@ -52,16 +56,50 @@ const MiddleMenu = () => (
 );
 
 const FullWidthImage = () => (
-    <Container>
-    <Row className="justify-content-center">
+    <Image className="img-fluid" src="https://courses.ics.hawaii.edu/ics314s23/morea/ui-frameworks/experience-islandsnow-bootstrap-main.png"></Image>
 
-        <Image className="fluid rounded mx-auto d-block py-1" src="https://courses.ics.hawaii.edu/ics314s23/morea/ui-frameworks/experience-islandsnow-bootstrap-main.png"></Image>
-    </Row>
-    </Container>
 );
 
 const FooterMenu = () => (
-    <h1>FooterMenu</h1>
+    <footer>
+
+    <Row className="pt-4">
+    <Col>
+      NAVIGATION
+      <hr/>
+      <div>About Us</div>
+      <div>Employment</div>
+      <div>About Us</div>
+    </Col>
+    <Col>
+      MAIN MENU
+      <hr/>
+      <div>Men</div>
+      <div>Women</div>
+      <div>Kids</div>
+    </Col>
+      <Col>
+        Connect
+        <hr />
+        <div>Sign up for latest updates</div>
+        <ButtonToolbar
+            className="justify-content-between"
+            aria-label="Toolbar with Button groups"
+        >
+          <InputGroup>
+            <Form.Control
+                type="text"
+                placeholder="Enter Email Address"
+                aria-label="Input group example"
+                aria-describedby="btnGroupAddon2"
+            />
+            <Button variant="dark">Join</Button>
+          </InputGroup>
+        </ButtonToolbar>
+      </Col>
+    </Row>
+  </footer>
+
 );
 
 const IslandSnow = () => (
